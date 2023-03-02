@@ -1,0 +1,46 @@
+body{
+    background-color: #2f3931;
+    color: white;
+    font-family: Dubai;
+}
+
+.logo-img{
+    padding-top: 2rem;
+}
+
+.roll-btn{
+    text-align: center;
+}
+
+.dices{
+    display: flex;
+    padding-left: 100px;
+    text-align: center;
+}
+.dice-one{
+    border-radius: 30%;
+    padding: 5rem;
+}
+.dice-two{
+    border-radius: 30%;
+    padding: 5rem;
+}
+
+.vencedor{
+    visibility:hidden;
+    position: absolute;
+    left: 75%;
+    top: 70%
+}
+h1{
+    text-align: center;
+    text-transform: uppercase;
+    color: ivory;
+    font-size: 6rem;
+}
+
+.changeTheme{
+    cursor: pointer;
+    text-decoration: none;
+    color: aquamarine;
+}
