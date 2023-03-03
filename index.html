@@ -9,6 +9,8 @@
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <!-- Bootstrap icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <!-- Css -->
     <link id="css-sheet" rel="stylesheet" href="css/style.css">
     <!-- Favicon -->
@@ -18,10 +20,10 @@
 <body>
     <!-- Header da Pagina -->
     <header><a href="index.html"><img src="resources/banner.png" class="logo-img"></a>
-    <a onclick="changeTheme()" class="changeTheme">Dark mode</a>
-    
+        <a onclick="changeTheme()" class="changeTheme position-absolute top-0 end-0"><i class="bi bi-moon-fill"></i></i></a>
+
     </header>
-    
+
     <!-- Primeiro Dado -->
     <section class="dices">
         <div class="first">
@@ -36,10 +38,11 @@
             <button class="btn btn-light btnTwo" onclick="roll('.dice-two')">Girar</button>
         </div>
         <!-- Resultado que aparece apos os dois dados serem clicados -->
-        <h1 class="resultado"></h1><br><a onclick="reset()" class="vencedor"><button class="btn btn-dark btnJogarNovamente">jogar novamente</button></a>
-        
+        <h1 class="resultado"></h1><br><a onclick="reset()" class="vencedor"><button
+                class="btn btn-dark btnJogarNovamente">jogar novamente</button></a>
+
     </section>
-    
+
 </body>
 
 <!--Bootstrap Script -->
@@ -48,5 +51,9 @@
     crossorigin="anonymous"></script>
 <!-- Script -->
 <script src="index.js"></script>
+<!--AwesomeFont Script-->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/js/all.min.js"
+    integrity="sha512-2bMhOkE/ACz21dJT8zBOMgMecNxx0d37NND803ExktKiKdSzdwn+L7i9fdccw/3V06gM/DBWKbYmQvKMdAA9Nw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 </html>

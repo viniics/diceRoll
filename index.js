@@ -94,12 +94,12 @@ function mostrarGanhador(dado1, dado2) {
 function changeTheme() {
     if (defaultTheme === "light") {
         document.querySelector("#css-sheet").setAttribute("href", "css/darkMode.css");
-        document.querySelector(".changeTheme").innerHTML = "Light Mode";
+        document.querySelector(".changeTheme").innerHTML = "<i class='bi bi-brightness-high-fill'></i>";
         defaultTheme = "dark";
     }
     else {
         document.querySelector("#css-sheet").setAttribute("href", "css/style.css");
-        document.querySelector(".changeTheme").innerHTML = "Dark Mode";
+        document.querySelector(".changeTheme").innerHTML = "<i class='bi bi-moon-fill'></i>";
         defaultTheme = "light";
     }
 }
