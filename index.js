@@ -75,6 +75,7 @@ function hideButton(dado) {
 
 //Calcula o ganhador da função
 function mostrarGanhador(dado1, dado2) {
+
     if (dado1 > dado2) {
         document.querySelector(".resultado").innerHTML = "Jogador 1 venceu";
 
@@ -85,6 +86,7 @@ function mostrarGanhador(dado1, dado2) {
     else {
         document.querySelector(".resultado").innerHTML = "Jogador 2 venceu";
     }
+    document.querySelector(".resultado").style.visibility = "visible";
     document.querySelector(".vencedor").style.visibility = "visible";
 }
 
@@ -102,4 +104,16 @@ function changeTheme() {
     }
 }
 
-//A implementar: no lugar de atualizar a pagina, tornar certos atributos visiveis e outros invisiveis ao clicar em "Jogar novamente"
+
+//ATT 1.1
+/*
+Adicionada função de resetar, que apenas esconde os */
+
+function reset(){
+    document.querySelector(".btnOne").style.visibility = "visible";
+    isActiveOne=true;
+    document.querySelector(".btnTwo").style.visibility = "visible";
+    isActiveTwo=true;
+    document.querySelector(".vencedor").style.visibility = "hidden";
+    document.querySelector(".resultado").style.visibility = "hidden";
+}
