@@ -10,8 +10,7 @@ defaultTheme = "light";
 //Funcao que eh executada ao apertar no botao de girar o dado
 function roll(dado) {
     var index = (Math.floor((Math.random()) * 6)) + 1;
-    var dice = getImage(index);
-    document.querySelector(dado).setAttribute("src", "resources/" + getImage(index))
+    document.querySelector(dado).setAttribute("src", "resources/dice"+index+".jpg")
     hideButton(dado);
     if (dado == ".dice-one") {
         valorDado1 = index;
@@ -20,33 +19,8 @@ function roll(dado) {
         valorDado2 = index;
     }
     if (isActiveOne == false && isActiveTwo == false) {
-        console.log("entrou aq")
         mostrarGanhador(valorDado1, valorDado2);
 
-    }
-}
-
-//Funcao para pegar a imagem correta do dado
-function getImage(index) {
-    switch (index) {
-        case 1:
-            return "oneDot.jpg"
-            break;
-        case 2:
-            return "twoDot.jpg";
-            break;
-        case 3:
-            return "threeDot.jpg"
-            break;
-        case 4:
-            return "fourDot.jpg";
-            break;
-        case 5:
-            return "fiveDot.jpg"
-            break;
-        case 6:
-            return "sixDot.jpg";
-            break;
     }
 }
 

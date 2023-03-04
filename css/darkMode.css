@@ -43,4 +43,6 @@ h1{
     cursor: pointer;
     text-decoration: none;
     color: aquamarine;
+    font-size: 40px;
+    margin: 0 10px 10px 0;
 }
